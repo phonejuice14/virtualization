@@ -33,7 +33,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Catalog />} />
-                <Route path="/machines/:id/emulator" element={<Emulator />} />
+                <Route path="/os/:id/" element={<Emulator />} />
             </Routes>
         </Router>
     )

@@ -9,7 +9,7 @@ const Filter = ({onChange}) => {
 
     let initialValues = {
         searchQuery: "",
-        yearFrom: 1980,
+        yearFrom: 1965,
         yearTo: 2000,
         selectedCategories: [...categories],
         interfaceType: "ALL",
