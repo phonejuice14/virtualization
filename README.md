@@ -12,6 +12,11 @@ cd virtualization
 ```
 Дальше нужен будет node.js, скачать можно здесь https://nodejs.org/en
 
+Отключаем проверку SSL сертификата
+```
+npm set strict-ssl false
+```
+
 Устанавливаем пакеты:
 ```
 npm install 
