@@ -12,8 +12,8 @@ const Catalog = () => {
 
     function changeFilters(filters) {
         function filterCallback(element) {
-            if (filters.searchQuery) {
-                return !!element.name.toLowerCase().includes(filters.searchQuery.toLowerCase());
+            if (filters.searchQuery && !element.name.toLowerCase().includes(filters.searchQuery.toLowerCase())) {
+                return false
 
             }
 
