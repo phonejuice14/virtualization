@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import { Expand, RefreshCcw } from 'lucide-react';
+import {Expand, RefreshCcw} from 'lucide-react';
 import SpinBox from "../UI/input/SpinBox";
 import CheckBox from "../UI/input/CheckBox";
 import Select from "../UI/input/Select";
 import IconButton from "../UI/button/IconButton";
 
 
-const EmulatorMenu = ({ emulatorRef, emulatorContainerRef, emulatorConfig }) => {
+const EmulatorMenu = ({emulatorRef, emulatorContainerRef, emulatorConfig}) => {
     const defaultScaleX = emulatorConfig?.defaultScaleX || 0.8;
     const defaultScaleY = emulatorConfig?.defaultScaleY || 0.8;
 
@@ -14,36 +14,7 @@ const EmulatorMenu = ({ emulatorRef, emulatorContainerRef, emulatorConfig }) => 
     const [scaleX, setScaleX] = useState(defaultScaleX);
     const [scaleY, setScaleY] = useState(defaultScaleY);
     const [mouseIsEnabled, setMouseIsEnabled] = useState(true);
-    const [fullScreenEnabled, setFullScreenEnabled] = useState(false);
-
-    function handleResize() {
-        const container = emulatorContainerRef.current;
-        const canvas = container.querySelector("canvas");
-        const emulator = emulatorRef.current;
-
-        if (!canvas || !emulator) return;
-
-        const containerRatio = container.clientWidth / container.clientHeight;
-        const canvasRatio = canvas.width / canvas.height;
-
-        let scale;
-        if (containerRatio > canvasRatio) {
-            scale = container.clientHeight / canvas.height;
-        } else {
-            scale = container.clientWidth / canvas.width;
-        }
-
-        if (fullScreenEnabled) {
-            setFullScreenEnabled(false);
-            emulator.screen_set_scale(scaleX, scaleY);
-        } else {
-            setFullScreenEnabled(true);
-        }
-        emulator.screen_set_scale(1, 1);
-        canvas.style.width = `${canvas.width * scale}px`;
-        canvas.style.height = `${canvas.height * scale}px`;
-        canvas.style.margin = "auto";
-    }
+    const [soundIsEnabled, setSoundIsEnabled] = useState(true);
 
 
     useEffect(() => {
@@ -51,10 +22,6 @@ const EmulatorMenu = ({ emulatorRef, emulatorContainerRef, emulatorConfig }) => 
         if (!container || !emulatorRef.current) return;
 
         container.addEventListener('click', onEmulatorClick);
-
-        window.addEventListener("resize", handleResize);
-
-        emulatorRef.current.add_listener("screen-set-size", handleResize);
 
         if (hideMouseOnHover) {
             container.classList.add('hide-cursor');
@@ -67,7 +34,6 @@ const EmulatorMenu = ({ emulatorRef, emulatorContainerRef, emulatorConfig }) => 
             container.removeEventListener('click', onEmulatorClick);
         };
     }, [mouseIsEnabled, hideMouseOnHover, scaleX, scaleY]);
-
 
     const onEmulatorClick = () => {
         let emulator = emulatorRef.current;
@@ -84,7 +50,6 @@ const EmulatorMenu = ({ emulatorRef, emulatorContainerRef, emulatorConfig }) => 
     const setEmulatorScale = (x, y) => {
         emulatorRef.current?.screen_set_scale?.(x, y);
     }
-
     return (
         <aside className="bg-white p-6 rounded-lg shadow-md md:shadow-none md:w-72 lg:w-80 hidden md:block">
             <div className="mb-6">
@@ -120,15 +85,27 @@ const EmulatorMenu = ({ emulatorRef, emulatorContainerRef, emulatorConfig }) => 
             </div>
 
             <div className="mb-6">
-                <h3 className="text-sm font-medium text-neutral-700 mb-2">Категории</h3>
+                <h3 className="text-sm font-medium text-neutral-700 mb-2">Устройства</h3>
                 <div className="space-y-2">
-                    {["windows", "linux", "dos"].map((category) => (
-                        <CheckBox
-                            label={category}
-                            key={category}
-                            value={category}
-                        />
-                    ))}
+                    <CheckBox
+                        label="Мышь"
+                        value="mouse"
+                        checked={mouseIsEnabled}
+                        onChange={(e) => {
+                            setMouseIsEnabled(e.target.checked);
+                            emulatorRef.current.mouse_set_status(!mouseIsEnabled);
+                            e.target.blur();
+                        }}
+                    />
+                    <CheckBox
+                        label="Звук"
+                        value="keyboard"
+                        checked={soundIsEnabled}
+                        onChange={(e) => {
+                            setSoundIsEnabled(e.target.checked);
+                            emulatorRef.current.speaker_adapter.mixer.set_volume(Number(soundIsEnabled), undefined);
+                        }}
+                    />
                 </div>
             </div>
 
@@ -136,8 +113,8 @@ const EmulatorMenu = ({ emulatorRef, emulatorContainerRef, emulatorConfig }) => 
                 <Select
                     label="Тип управления курсора"
                     options={[
-                        { value: "perClick", label: "Скрывать при клике" },
-                        { value: "perHover", label: "Скрывать при наведении" },
+                        {value: "perClick", label: "Скрывать при клике"},
+                        {value: "perHover", label: "Скрывать при наведении"},
                     ]}
                     onChange={(e) => {
                         setHideMouseOnHover(e.target.value === "perHover");
@@ -146,14 +123,15 @@ const EmulatorMenu = ({ emulatorRef, emulatorContainerRef, emulatorConfig }) => 
                     }}
                 />
             </div>
+            <div className=""></div>
             <IconButton
                 onClick={() => emulatorRef.current?.screen_go_fullscreen?.()}
-                icon={<Expand color="white" />}
+                icon={<Expand color="white"/>}
                 text="На полный экран"
             />
             <IconButton
                 onClick={() => emulatorRef.current?.restart?.()}
-                icon={<RefreshCcw color="white" />}
+                icon={<RefreshCcw color="white"/>}
                 text="Перезапуск"
                 className="bg-red-400 hover:bg-red-500 mt-2"
             />

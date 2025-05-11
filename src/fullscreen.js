@@ -12,26 +12,17 @@ function isFullscreen() {
     );
 }
 
-function handleFullscreenChange() {
-    if (isFullscreen()) {
+function handleResize() {
+    const container = document.getElementById("screen_container")
+    const canvas = container.querySelector("canvas");
+    const emulator = window.emulator;
 
-    } else {
+    if (!canvas || !emulator) return;
 
-    }
-}
-
-document.addEventListener('fullscreenchange', handleFullscreenChange);
-document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
-document.addEventListener('mozfullscreenchange', handleFullscreenChange);
-document.addEventListener('MSFullscreenChange', handleFullscreenChange);
-
-console.log("Скрипт отслеживания полноэкранного режима активирован.");function isFullscreen() {
-    return !!(
-        document.fullscreenElement ||
-        document.webkitFullscreenElement ||
-        document.mozFullScreenElement ||
-        document.msFullscreenElement
-    );
+    emulator.screen_set_scale(1, 1);
+    canvas.style.width = `100%`;
+    canvas.style.height = `100%`;
+    canvas.style.margin = "auto";
 }
 
 function handleFullscreenChange() {
@@ -39,6 +30,8 @@ function handleFullscreenChange() {
         let scaleY = parseFloat(document.getElementById("spin_y").value);
         let scaleX = parseFloat(document.getElementById("spin_x").value);
         window.emulator.screen_set_scale(scaleX, scaleY);
+    } else {
+        handleResize();
     }
 }
 

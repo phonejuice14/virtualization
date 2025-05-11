@@ -6,6 +6,11 @@ const Emulator = () => {
     const emulatorRef = useRef(null);
     const emulatorContainerRef = useRef(null);
 
+    const setScale = () => {
+        if (emulatorRef.current) {
+            emulatorRef.current.screen_set_scale(0.8, 0.8);
+        }
+    };
 
     useEffect(function initializeEmulator() {
         window.emulator = new window.V86({
@@ -22,15 +27,28 @@ const Emulator = () => {
 
         emulatorRef.current = window.emulator;
 
-        emulatorRef.current.add_listener('emulator-ready', () => {
-            emulatorRef.current.screen_set_scale(0.8, 0.8);
+        const handlers = [
+            'emulator-ready',
+            'emulator-start',
+            'screen-set-mode',
+            'serial0-output-char',
+            'init-done'
+        ];
+
+        handlers.forEach(event => {
+            emulatorRef.current.add_listener(event, () => {
+                for (let time = 0; time <= 1000; time += 200) {
+                    setTimeout(setScale, time);
+                }
+            });
         });
 
         return () => {
-
+            if (emulatorRef.current) {
+                emulatorRef.current.destroy();
+            }
         };
     }, []);
-
 
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col">
