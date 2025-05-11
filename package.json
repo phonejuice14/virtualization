@@ -9,11 +9,13 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^12.9.2",
+    "lucide": "^0.509.0",
     "lucide-react": "^0.503.0",
     "npx": "^10.2.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.5.0",
+    "tailwindcss": "^4.1.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

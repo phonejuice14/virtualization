@@ -13,3 +13,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#screen_container {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#screen {
+  white-space: pre;
+  position: relative;
+  font-family: Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: normal;
+}
+
+#vga {
+  background-color: #000;
+  touch-action: none;
+}
+
+canvas {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  transform-origin: top left;
+  touch-action: none;
+}
+
+.emulator-container {
+  cursor: default;
+}
+
+.hide-cursor {
+  cursor: none !important;
+}

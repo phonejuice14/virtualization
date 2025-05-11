@@ -102,7 +102,7 @@ const HomePage = () => {
                             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-neutral-800">
                                 Готовы к погружению?
                             </h2>
-                            <p className="text-neutral-600 mb-8">
+                            <p className="text-neutral-600 mb-8b">
                                 В нашем обширном каталоге представлены операционные системы всех эпох: от ранних
                                 интерфейсов командной строки до графических систем недалекого прошлого.
                             </p>

@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
         <header className="bg-white shadow-sm">
-            <div className="container mx-auto px-4 py-4 flex justify-between items-center"><a
+            <div className="container mx-auto px-4 py-3 flex justify-between items-center"><a
                 className="flex items-center gap-2 text-blue-600 font-bold text-xl transition-colors hover:text-primary-700"
                 href="/public">
                 {computer_svg}
