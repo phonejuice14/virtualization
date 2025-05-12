@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Expand, RefreshCcw} from 'lucide-react';
+import {Expand, RefreshCcw, ArrowDownFromLine, ArrowUpFromLine} from 'lucide-react';
 import SpinBox from "../UI/input/SpinBox";
 import CheckBox from "../UI/input/CheckBox";
 import Select from "../UI/input/Select";
@@ -123,7 +123,23 @@ const EmulatorMenu = ({emulatorRef, emulatorContainerRef, emulatorConfig}) => {
                     }}
                 />
             </div>
-            <div className=""></div>
+            <h3 className="text-sm font-medium text-neutral-700 mb-2">Состояние</h3>
+            <div className="flex flex-column pb-4">
+
+
+                <IconButton
+                    onClick={() => {}}
+                    icon={<ArrowUpFromLine width="20px" color="white"/>}
+                    text="Загрузить"
+                    className="bg-emerald-500 hover:bg-emerald-700 text-sm mr-2 h-10"
+                />
+                <IconButton
+                    onClick={() => emulatorRef.current?.restart?.()}
+                    icon={<ArrowDownFromLine width="20px" color="white"/>}
+                    text="Скачать"
+                    className="bg-emerald-500 hover:bg-emerald-700 text-sm h-10"
+                />
+            </div>
             <IconButton
                 onClick={() => emulatorRef.current?.screen_go_fullscreen?.()}
                 icon={<Expand color="white"/>}
