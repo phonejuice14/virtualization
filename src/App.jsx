@@ -17,7 +17,7 @@ function App() {
     //         boot_order: '0x123',
     //         memory_size: 512 * 1024 * 1024,
     //         vga_memory_size: 64 * 1024 * 1024,
-    //         fda: { url: '/images/windows101.img' },
+    //         fda: { url: '/machines/windows101.img' },
     //         autostart:  true,
     //     });
     // }, []);
@@ -33,7 +33,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Catalog />} />
-                <Route path="/os/:id/" element={<Emulator />} />
+                <Route path="/os/:systemId/" element={<Emulator />} />
             </Routes>
         </Router>
     )

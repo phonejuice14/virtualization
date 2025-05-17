@@ -17,7 +17,7 @@ const OsCard = ({os}) => {
             <Link to={`/os/${os.id}`}>
                 <div className="h-48 overflow-hidden">
                     <img
-                        src={os.imageUrl}
+                        src={os.pictureUrl}
                         alt="Windows 11"
                         className="w-full h-full object-cover"
                         loading="lazy"

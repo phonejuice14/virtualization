@@ -5646,7 +5646,7 @@ $V86$$module$src$browser$starter$$.prototype.continue_init = async function($emu
         $put_on_settings$$.call(this, $f$jscomp$1$$.name, $f$jscomp$1$$.loadable);
         $cont$$($index$jscomp$83$$ + 1);
       }.bind(this), $f$jscomp$1$$.loadable.load()) : $load_file$$module$src$lib$$($f$jscomp$1$$.url, {done:function($result$jscomp$10$$) {
-        $f$jscomp$1$$.url.endsWith(".zst") && "initial_state" !== $f$jscomp$1$$.name && ($dbg_assert$$module$src$log$$($f$jscomp$1$$.size, "A size must be provided for compressed images"), $result$jscomp$10$$ = this.zstd_decompress($f$jscomp$1$$.size, new Uint8Array($result$jscomp$10$$)));
+        $f$jscomp$1$$.url.endsWith(".zst") && "initial_state" !== $f$jscomp$1$$.name && ($dbg_assert$$module$src$log$$($f$jscomp$1$$.size, "A size must be provided for compressed machines"), $result$jscomp$10$$ = this.zstd_decompress($f$jscomp$1$$.size, new Uint8Array($result$jscomp$10$$)));
         $put_on_settings$$.call(this, $f$jscomp$1$$.name, $f$jscomp$1$$.as_json ? $result$jscomp$10$$ : new $SyncBuffer$$module$src$buffer$$($result$jscomp$10$$));
         $cont$$($index$jscomp$83$$ + 1);
       }.bind(this), progress:function($e$jscomp$41$$) {

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c0059db-fdcf-44bb-b816-b66ff46ea128" name="Changes" comment="feat(images)">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/tailwindcss.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/virtualization.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/KolibriOS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Windows_1.01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/default_linux.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/machines/kolibri.img" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/WIN95.img" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/kolibri.img" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/linux.iso" beforeDir="false" afterPath="$PROJECT_DIR$/public/machines/linux.iso" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/windows101.img" beforeDir="false" afterPath="$PROJECT_DIR$/public/machines/windows101.img" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/libv86-debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libv86-debug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/machines/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/button/IconButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/button/IconButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/emulator/EmulatorMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emulator/EmulatorMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/os/OsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/os/OsCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/systems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/systems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Emulator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Emulator.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SansLy25&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SansLy25/virtualization.git&quot;,
+    &quot;accountId&quot;: &quot;d6f42535-89ee-4316-882b-9b4ef7d2fd4b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2wyHxwzYUbfKV9M16PbtW7zTHAi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rober/PycharmProjects/TeamSync&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.tailwindcss&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rober\WebstormProjects\virtualization\public\machines" />
+      <recent name="C:\Users\rober\WebstormProjects\virtualization\public\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c0059db-fdcf-44bb-b816-b66ff46ea128" name="Changes" comment="" />
+      <created>1747007145253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747007145253</updated>
+      <workItem from="1747007146751" duration="1968000" />
+      <workItem from="1747055007125" duration="48000" />
+      <workItem from="1747127571373" duration="613000" />
+      <workItem from="1747250711115" duration="1271000" />
+      <workItem from="1747252134419" duration="2193000" />
+      <workItem from="1747422393688" duration="11592000" />
+      <workItem from="1747476473588" duration="922000" />
+    </task>
+    <task id="LOCAL-00001" summary="hot fixes">
+      <option name="closed" value="true" />
+      <created>1747008531752</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747008531752</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hot fixes" />
+    <MESSAGE value="feat(images)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(images)" />
+  </component>
+</project>
