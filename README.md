@@ -4,7 +4,7 @@
 если есть git то пишем в терминал
 
 ```
-git clone https://github.com/SansLy25/virtualization.git
+git clone https://github.com/phonejuice14/virtualization.git
 ```
 После этого переходим в папку проекта через терминал
 ```
