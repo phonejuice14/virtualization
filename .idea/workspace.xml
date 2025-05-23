@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c0059db-fdcf-44bb-b816-b66ff46ea128" name="Changes" comment="feat(images)">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tailwindcss.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/virtualization.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/KolibriOS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Windows_1.01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/default_linux.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/machines/kolibri.img" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/WIN95.img" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/kolibri.img" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/linux.iso" beforeDir="false" afterPath="$PROJECT_DIR$/public/machines/linux.iso" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/windows101.img" beforeDir="false" afterPath="$PROJECT_DIR$/public/machines/windows101.img" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libv86-debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libv86-debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/machines/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/button/IconButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/button/IconButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/emulator/EmulatorMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emulator/EmulatorMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/os/OsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/os/OsCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Filter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/systems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/systems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Emulator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Emulator.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REPORT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +25,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/SansLy25/virtualization.git&quot;,
-    &quot;accountId&quot;: &quot;d6f42535-89ee-4316-882b-9b4ef7d2fd4b&quot;
+    &quot;accountId&quot;: &quot;73a87f29-28a7-4723-934d-8837dca42105&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -65,7 +42,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rober/PycharmProjects/TeamSync&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rober/WebstormProjects/virtualization&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -95,7 +72,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19" />
+        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
       </set>
     </attachedChunks>
   </component>
@@ -113,7 +91,11 @@
       <workItem from="1747250711115" duration="1271000" />
       <workItem from="1747252134419" duration="2193000" />
       <workItem from="1747422393688" duration="11592000" />
-      <workItem from="1747476473588" duration="922000" />
+      <workItem from="1747476473588" duration="1690000" />
+      <workItem from="1747585978767" duration="1203000" />
+      <workItem from="1747840581470" duration="50000" />
+      <workItem from="1748015937059" duration="904000" />
+      <workItem from="1748016879302" duration="5554000" />
     </task>
     <task id="LOCAL-00001" summary="hot fixes">
       <option name="closed" value="true" />
@@ -123,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747008531752</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(images)">
+      <option name="closed" value="true" />
+      <created>1747478432137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747478432137</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
